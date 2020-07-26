@@ -45,4 +45,6 @@ func Threads() (threads []Thread, err error) {
 
 		threads = append(threads, th)
 	}
+	rows.Close()
+	return
 }
